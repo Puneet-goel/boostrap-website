@@ -1,0 +1,13 @@
+.nav{
+	padding: 0;
+	height: 0px;
+}
+
+.text{
+    font-family: "BlockBertholdTextured";
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    opacity: .4;
+    padding: 0;
+}
