@@ -46,3 +46,38 @@
     color: #000;
     opacity: .4;
 }
+
+.modal-dialog,
+.modal-content {
+    height: 80%;
+    text-align: center;
+}
+
+.modal-header{
+	font-family: "BlockBertholdTextured";
+    font-weight: 900;
+    font-style: normal;
+    color: #000;
+    opacity: .4;
+    letter-spacing: 0.5px;
+}
+
+.modal-title{
+	width: 100%;
+	text-align: center;
+}
+
+#modal-button{
+	position: relative;
+	transform: translate(65%,-60%);
+	text-align: center;
+	border-radius: 50%;
+	opacity: 1;
+	background-color: #ffffff;
+}
+
+.modal-body{
+	background-color: #e8e0da;
+	/* 100% = dialog height, 60px = header */
+    max-height: calc(100% - 60px);
+}
