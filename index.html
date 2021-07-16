@@ -22,7 +22,7 @@
 			<img id="logo" src="./public/images/logo.png" class="col-2 col-md-1 bg-white" alt="Logo"> 
 
 			<div id="location" class="col-auto align-items-center" type="button" data-toggle="modal" data-target="#location-modal">
-				<i class='fas fa-map-marker-alt' style='font-size:15px'></i>
+				<i class='fas fa-map-marker-alt' style='font-size:15px;color:orange;'></i>
 				<span>Tap on it to pick your location...</span>
 			</div>
 
@@ -61,7 +61,7 @@
 			</div>
 
 			<div id="search" class="col-2 col-md-1">
-				<a class='fa fa-search' href="search.html" style='font-size:24px;color:brown'></a>
+				<a class='fa fa-search' href="./search.html" style='font-size:24px;color:brown'></a>
 			</div>
 
 			<!-- Collapse Button -->
@@ -118,7 +118,7 @@
 		<div class="modal-dialog modal-dialog modal-dialog-centered">
 		    <div class="modal-content">
 
-		    <!-- Modal Header -->
+		        <!-- Modal Header -->
 			    <div class="modal-header">
 			        <h4 class="modal-title modal_header">CHANGE LOCATION</h4>
 			        <button id="modal-button" type="button" class="close" data-dismiss="modal">&times;</button>
@@ -127,11 +127,12 @@
 			    <!-- Modal body -->
 			    <div class="modal-body">
 			    	<div class="input">
-			    	    <i class='fa fa-search pl-2'></i>
-			    	    <input id="user-location" type="text" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" placeholder="Enter Your Location" value>
+			    	    <i class='fas fa-search pl-2'></i>
+			    	    <input id="user" type="text" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" placeholder="Enter Your Location" value>
 				    </div>
 			    </div>
 
+			    <!-- Modal footer -->
 			    <div class="modal-footer justify-content-center">
 			        <button id="modal-button2" type="button" class="btn" data-dismiss="modal">CONFIRM LOCATION</button>
 			    </div>

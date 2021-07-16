@@ -33,6 +33,10 @@
 	text-align: center;
 }
 
+a{
+    text-decoration: none !important;
+}
+
 #navbarButton{
 	margin-left: 5%;
 	margin-right: 5%;
@@ -93,10 +97,16 @@
 	font-family: "BlockBertholdTextured";
 }
 
-#user-location{
+#user{
 	padding: 5px;
 	border: none;
 	width: 80%;
+}
+
+#user-search{
+	padding: 5px ;
+	border: none;
+	width: 70%;
 }
 
 .input{
