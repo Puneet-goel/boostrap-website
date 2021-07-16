@@ -78,6 +78,33 @@
 
 .modal-body{
 	background-color: #e8e0da;
-	/* 100% = dialog height, 60px = header */
-    max-height: calc(100% - 60px);
+	/* 100% = dialog height, 60px = header +footer*/
+    max-height: calc(100% - 120px);
+}
+
+.modal-footer{
+	background-color: #e8e0da;
+}
+
+#modal-button2{
+	background-color: #e70;
+	color: #fff;
+	border-radius: 25px;
+	font-family: "BlockBertholdTextured";
+}
+
+#user-location{
+	padding: 5px;
+	border: none;
+	width: 80%;
+}
+
+.input{
+	background-color: #ffffff;
+	text-align: start;
+	border-radius: 25px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
