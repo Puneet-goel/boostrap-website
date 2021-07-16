@@ -10,6 +10,12 @@ $("#example").css("margin-top",`${divElement}px`);
 // Setting margin by getting navbar height 
 $("#search-button").css("margin-top",`${divElement+40}px`); 
 
+
+// margin for Tables
+// Setting margin by getting navbar height 
+$("#stores").css("margin-top",`${divElement+40}px`); 
+
+
 function showAlert() {
     alert(document.getElementById("user-search").value);
 }
