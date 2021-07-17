@@ -131,3 +131,38 @@ body{
 	width: 80%;
 	height: 50%;
 }
+
+#footer{
+	color: floralwhite;
+}
+
+#footer-icon{
+    font-size: 40px;
+    width: 50px;
+    text-align: center;
+}
+
+.fa-facebook-square{
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter-square{
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin-square{
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube{
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram-square{
+  background: #bf15a4;
+  color: white;
+}
