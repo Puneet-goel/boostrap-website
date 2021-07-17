@@ -126,3 +126,8 @@ body{
 	cursor: not-allowed;
 	height: 100%;
 }
+
+#iframe{
+	width: 80%;
+	height: 50%;
+}
