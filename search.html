@@ -18,7 +18,7 @@
 
 
 	<!-- BreadCrumb -->
-	<nav aria-label="breadcrumb" class="ml-5 mt-5">
+	<nav aria-label="breadcrumb" class="mx-5 mt-5">
         <ol class="breadcrumb">
 		    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
 		    <li class="breadcrumb-item active" aria-current="page">Search</li>
@@ -33,6 +33,69 @@
 	    </button>
     	<input id="search-input" type="text" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" placeholder="Search here..." value>
 	</div>
+
+
+    <!-- Bootstrap filters -->
+	<div class="container justify-content-center centre mt-5">
+        <h2 class="text">NEARBY STORES</h2>
+        <br><br>
+
+        <div class="table-responsive">
+            <table id="table" class="table table-bordered table-light">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Location</th>
+                        <th>Timing</th>
+                        <th>Open/Closed</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    <tr>
+                        <td class="text-muted">1</td>
+                        <td class="text-info">Pacific Mall Khayala, Najafgarh Rd, Tagore Garden, New Delhi</td>
+                        <td class="text-warning">12.00 A.M-11.59 PM</td>
+                        <td class="text-success">Open Now</td>
+                    </tr>
+                    <tr>
+                        <td class="text-muted">2</td>
+                        <td class="text-info">TDI Mall, No 6, Ground, Rajouri Garden, New Delhi</td>
+                        <td class="text-warning">9.00 A.M-9.00 PM</td>
+                        <td class="text-success">Open Now</td>
+                    </tr>
+                    <tr>
+                        <td class="text-muted">3</td>
+                        <td class="text-info">Shop No 10 Kirti Nagar Metro Station, New Delhi</td>
+                        <td class="text-warning">10.00 A.M-11.45 PM</td>
+                        <td class="text-danger">Closed</td>
+                    </tr>
+                    <tr>
+                        <td class="text-muted">4</td>
+                        <td class="text-info">Shop No. S - 2 & 3, Plot No. A3 2nd Floor, Select CityWalk Pushp Vihar, Saket, New Delhi</td>
+                        <td class="text-warning">11.00 A.M-11.00 PM</td>
+                        <td class="text-success">Open Now</td>
+                    </tr>
+                    <tr>
+                        <td class="text-muted">5</td>
+                        <td class="text-info">Near, Ground & M Floor, Commercial Site New Delhi Railway Station, Gate, Tajpur Rd, New Delhi</td>
+                        <td class="text-warning">11.00 A.M-10.45 PM</td>
+                        <td class="text-danger">Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+    	$(document).ready(function(){
+			$("#search-input").on("keyup",function(){
+				var value = $(this).val().toLowerCase();
+				$("#myTable tr").filter(function(){
+					$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+				});
+			});
+	    });
+    </script>
 
 	<script type="text/javascript" src="./javascript/change.js"></script>
 </body>
