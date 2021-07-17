@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./public/favicon.ico">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./CSS/deals.css">
+    <title>Burger</title>
+
+</head>
+<body >
+
+    <!-- BreadCrumb -->
+    <nav aria-label="breadcrumb" class="mt-5 mx-5">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Deals</li>
+        </ol>
+    </nav>
+
+    <br>
+    <div class="centre">
+        <h2 class="text">MENU</h2>
+    </div>
+    <br>
+
+    <!-- Cards + Carousel -->
+    <div id="food" class="carousel slide" data-ride="carousel">
+
+        <!-- The slideshow -->
+        <div  class="carousel-inner container">
+            <div class="carousel-item active row">
+                <div id="food-item" class="card col-sm-12 col-md-6">
+                    <img class="card-img-top" src="./public/order/food1.jpg" alt="food1">
+                    <div class="card-body">
+                        <h4 class="card-title">Crispy Veg Double Patty</h4>
+                        <p class="card-text">$1.01</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div id="food-item" class="card col-sm-12 col-md-6">
+                    <img class="card-img-top" src="./public/order/food2.jpg" alt="food2">
+                    <div class="card-body">
+                        <h4 class="card-title">Crispy Chicken Burger</h4>
+                        <p class="card-text">$1.07</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div id="food-item" class="card col-sm-12 col-md-6">
+                    <img class="card-img-top" src="./public/order/food3.jpg" alt="food3">
+                    <div class="card-body">
+                        <h4 class="card-title">Chicken Tandoori Grill Burger</h4>
+                        <p class="card-text">$2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div id="food-item" class="card col-sm-12 col-md-6">
+                    <img class="card-img-top" src="./public/order/food4.jpg" alt="food4">
+                    <div class="card-body">
+                        <h4 class="card-title">Big Smoky Grill Chicken Burger</h4>
+                        <p class="card-text">$2.13</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#food" data-slide="prev">
+            <i class='fas fa-hamburger'></i>
+        </a>
+        <a class="carousel-control-next" href="#food" data-slide="next">
+            <i class='fas fa-hamburger'></i>
+        </a> 
+    </div>
+
+
+</body>
+</html>
