@@ -1,4 +1,4 @@
-function adjust(){
+const adjust = () => {
 	let divElement = document.getElementById("header").offsetHeight;
 
 	// margin for carousel
@@ -6,8 +6,7 @@ function adjust(){
 	$("#example").css("margin-top",`${divElement}px`); 
 }
 
-
-function toolTip(){
+const toolTip = () => {
 	$(document).ready(function(){
 		$('[data-toggle="entry"]').tooltip();   
 	});
@@ -17,16 +16,15 @@ function toolTip(){
 
 }
 
-//Q idk y arrow function is not working here
-function showAlert(){
+const showAlert = () => {
     alert(document.getElementById("search-input").value);
 }
 
 const purchase = () => {
-	 alert("No items are added");
+	alert("No items are added");
 }
 
-function filter(){
+const filter = () => {
 	$(document).ready(function(){
 		$("#search-input").on("keyup",function(){
 			var value = $(this).val().toLowerCase();
