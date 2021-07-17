@@ -1,0 +1,27 @@
+textarea:focus, input:focus{
+    outline: none;
+}
+
+body{
+	background-color: #fbfaf8;
+}
+
+#search-div{
+	width: 70%;
+	background-color: #ffffff;
+	border-radius: 25px;
+	margin: auto;
+	margin-top: 5%;
+    padding: 10px;
+}
+
+#utensils{
+	font-size: 24px;
+	color: red;
+}
+
+#search-input{
+	padding: 5px ;
+	border: none;
+	width: 70%;
+}

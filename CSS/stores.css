@@ -1,0 +1,23 @@
+body{
+	background-image: url("../public/maps.jpg");
+}
+
+.centre{
+	text-align: center;
+}
+
+.text{
+    font-family: "BlockBertholdTextured";
+    font-weight: 900;
+    font-style: normal;
+    color: #000;
+    opacity: .4;
+}
+
+#table{
+	background-color: #f2f2e7;
+}
+
+.breadcrumb{
+	background-color: #f2f2e7;
+}
