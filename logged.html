@@ -10,30 +10,40 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="./CSS/search.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/login.css">
     <title>Burger</title>
 
 </head>
 <body>
 
 
+	<!-- Animated Progress Bar -->
+	<div class="progress mx-5 mt-2">
+        <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:60%"></div>
+    </div>
+
+
 	<!-- BreadCrumb -->
-	<nav aria-label="breadcrumb" class="ml-5 mt-5">
-        <ol class="breadcrumb">
-		    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-		    <li class="breadcrumb-item active" aria-current="page">Search</li>
-		</ol>
+    <nav aria-label="breadcrumb" class="mt-5 mx-5">
+        <ol id="breadcrumb" class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Logging In</li>
+        </ol>
     </nav>
 
 
-	<!-- Button  -->
-	<div id="search-div">
-		<button type="button" onclick="showAlert()" class="btn btn-outline-warning rounded-circle">
-	    	<i id="utensils" class='fas fa-utensils' ></i>
-	    </button>
-    	<input id="search-input" type="text" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" placeholder="Search here..." value>
-	</div>
+    <!-- Spinners -->
+	<div class="spinner-border text-danger mx-5 mt-3"></div>
 
-	<script type="text/javascript" src="./javascript/change.js"></script>
+
+	<!-- Network Alert -->
+	<div class="alert alert-warning alert-dismissible mx-5 mt-3 fade show">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+	    <strong>Network Error!</strong> Unable to fetch the data.
+	    <span class="badge badge-warning ">
+	    	<i class='fas fa-exclamation-triangle'></i>
+	    </span>
+    </div>
+
 </body>
 </html>
