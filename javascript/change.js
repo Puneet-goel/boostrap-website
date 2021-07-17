@@ -5,6 +5,12 @@ let divElement = document.getElementById("header").offsetHeight;
 // Setting margin by getting navbar height 
 $("#example").css("margin-top",`${divElement}px`); 
 
-function showAlert() {
+
+//Q idk y arrow function is not working here
+function showAlert(){
     alert(document.getElementById("search-input").value);
+}
+
+const purchase = () => {
+	 alert("No items are added");
 }
