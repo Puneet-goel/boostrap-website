@@ -13,6 +13,7 @@
 
 	<!-- Always write CSS style file after bootstrap cdn otherwise bootstrap will overwrite your css styles-->
 	<link rel="stylesheet" type="text/css" href="./CSS/styles.css">
+	<script type="text/javascript" src="./javascript/change.js"></script>
     <title>Burger</title>
 
 </head>
@@ -147,8 +148,8 @@
     </nav>
 
 
-	<!-- Entry Alerts -->
-	<div class="alert alert-info alert-dismissible mx-5 mt-3 fade show">
+	<!-- Entry Alert and ToolTip -->
+	<div class="alert alert-info alert-dismissible mx-5 mt-3 fade show" data-toggle="entry" title="Welcome!">
 		<button type="button" class="close" data-dismiss="alert">&times;</button>
 	    <strong>Hey!</strong>
 	    Have it your way  
@@ -182,16 +183,19 @@
     </div>
 
 
-	<!-- Endind Alert -->
-	<div class="alert alert-success alert-dismissible mx-5 mt-3 fade show">
+	<!-- Ending Alert -->
+	<div class="alert alert-success alert-dismissible mx-5 mt-3 fade show" data-toggle="entry" title="Bye!">
 		<button type="button" class="close" data-dismiss="alert">&times;</button>
 	    <strong>Bi :)!</strong> We Hope you will visit us soon!!.
 	    <span class="badge badge-success">
 	    	<i class='far fa-laugh-beam'></i>
 	    </span>
 	</div>
-	
 
-	<script type="text/javascript" src="./javascript/change.js"></script>
+	<script>
+		adjust();
+		toolTip();
+	</script>
+	
 </body>
 </html>
