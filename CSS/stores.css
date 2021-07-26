@@ -9,14 +9,10 @@ body{
 .text{
     font-family: "BlockBertholdTextured";
     font-weight: 900;
-    font-style: normal;
     color: #000;
 }
 
+.breadcrumb,
 #table{
-	background-color: #f2f2e7;
-}
-
-.breadcrumb{
 	background-color: #f2f2e7;
 }

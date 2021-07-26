@@ -1,3 +1,5 @@
+/*Common CSS*/
+
 textarea:focus, input:focus{
     outline: none;
 }
@@ -10,18 +12,24 @@ body{
 	background-color: #fbfaf8;
 }
 
+.text{
+    font-family: "BlockBertholdTextured";
+    font-weight: 900;
+    color: #000;
+}
+
 .centre{
 	text-align: center;
 }
 
+
+/* Navbar */
 #header{
 	padding: 0;
 }
 
 #logo{
-	width: 50px;
 	height: 79px;
-	position: relative;
 	bottom: -20px;
 	border-radius: 50%;
 	margin-left: 5%;
@@ -33,10 +41,8 @@ body{
 	padding: 10px;
 	border-radius: 20%;
 	background-color: #fbfaf8;
-	border-color: white;
 	text-align: center;
 	width: 30%;
-	height: 50%;
 	margin-right: 5%;
 }
 
@@ -51,29 +57,14 @@ body{
 
 #navbarButton{
 	margin-left: 5%;
-	margin-right: 5%;
-	padding: 0;
 }
 
-.text{
-    font-family: "BlockBertholdTextured";
-    font-weight: 900;
-    font-style: normal;
-    color: #000;
-}
+
+/* Modal */
 
 .modal-dialog,
 .modal-content {
     height: 80%;
-    text-align: center;
-}
-
-.modal-header2{
-	font-family: "BlockBertholdTextured";
-    font-weight: 900;
-    font-style: normal;
-    color: #000;
-    letter-spacing: 0.5px;
 }
 
 .modal-title{
@@ -81,22 +72,8 @@ body{
 	text-align: center;
 }
 
-#modal-button{
-	position: relative;
-	transform: translate(65%,-60%);
-	text-align: center;
-	border-radius: 50%;
-	opacity: 1;
-	background-color: #ffffff;
-}
-
+.modal-footer,
 .modal-body{
-	background-color: #e8e0da;
-	/* 100% = dialog height, 60px = header +footer*/
-    max-height: calc(100% - 120px);
-}
-
-.modal-footer{
 	background-color: #e8e0da;
 }
 
@@ -110,26 +87,22 @@ body{
 #user{
 	padding: 5px;
 	border: none;
-	width: 80%;
 }
 
 .input{
 	background-color: #ffffff;
-	text-align: start;
 	border-radius: 25px;
 }
 
+/* About image*/
 #about-img{
 	width: 100%;
 	cursor: not-allowed;
-	height: 100%;
 }
 
-#iframe{
-	width: 80%;
-	height: 50%;
-}
 
+
+/* footer Section*/
 #footer{
 	color: floralwhite;
 }
@@ -138,29 +111,25 @@ body{
     font-size: 40px;
     width: 50px;
     text-align: center;
-}
-
-.fa-facebook-square{
-    background: #3B5998;
     color: white;
 }
 
+.fa-facebook-square{
+	background: #3B5998;
+}
+
 .fa-twitter-square{
-  background: #55ACEE;
-  color: white;
+	background: #55ACEE;
 }
 
 .fa-linkedin-square{
-  background: #007bb5;
-  color: white;
+    background: #007bb5;
 }
 
 .fa-youtube{
-  background: #bb0000;
-  color: white;
+    background: #bb0000;
 }
 
 .fa-instagram-square{
-  background: #bf15a4;
-  color: white;
+    background: #bf15a4;
 }
