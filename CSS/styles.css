@@ -76,7 +76,7 @@ body{
 
 .modal-footer,
 .modal-body{
-	background-color: #e8e0da;
+	background-image: url("../public/maps.jpg");
 }
 
 #modal-button2{
