@@ -11,6 +11,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="./CSS/login.css">
+    <script type="text/javascript" src="./javascript/change.js"></script>
     <title>Burger</title>
 
 </head>
@@ -30,7 +31,7 @@
 	<div class="container">
 		<h2>Login</h2>
 		<br>
-        <form action="./logged.html" class="was-validated">
+        <form onSubmit="storeData(event)" class="was-validated">
             <div class="form-group">
                 <label for="name">Username :</label>
                 <input type="text" class="form-control" id="name" placeholder="Enter username" name="name" required>
